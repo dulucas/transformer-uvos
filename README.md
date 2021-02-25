@@ -4,11 +4,22 @@ This is a repo offers a strong baseline for Unsupervised Video Object Segmentati
 ## Accuracy
 ------
 With Res50 as backbone and image size (640x352) during training, using only single-scale for testing
-On DAVIS 2016:
+On **DAVIS 2016(val)**:
 
-J_mean | J_recall | J_decay | F_mean | F_recall | F_decay
--- | -- | -- | -- | -- | -- 
-0.777 | 0.915 | 0.066 | 0.766 | 0.859 | 0.043
+Method | J_mean | J_recall | J_decay | F_mean | F_recall | F_decay
+-- | -- | -- | -- | -- | -- | -- 
+Ours(Res50) | 0.777 | 0.915 | 0.066 | 0.766 | 0.859 | 0.043
 
-## Visualization
-------
+## Architecture
+ResNet50-FPN + Transformer + Simple Decoder
+
+## Training
+The code requires 4 GPUs by default.
+```
+cd model/transformer/davis.transformer.fpn.R50.random_sample/
+sh run.sh
+```
+
+## Acknowledgement 
+Idea inspired by [Anchor-Diffusion](https://arxiv.org/abs/1910.10895)
+Codes based on [TorchSeg](https://github.com/ycszen/TorchSeg)
