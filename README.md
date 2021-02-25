@@ -2,7 +2,6 @@
 This is a repo offers a strong baseline for Unsupervised Video Object Segmentation(UVOS) using Transformer
 
 ## Accuracy
-------
 With Res50 as backbone and image size (640x352) during training, using only single-scale for testing
 On **DAVIS 2016(val)**:
 
@@ -23,3 +22,6 @@ sh run.sh
 ## Acknowledgement 
 Idea inspired by [Anchor-Diffusion](https://arxiv.org/abs/1910.10895)
 Codes based on [TorchSeg](https://github.com/ycszen/TorchSeg)
+
+## Contact
+Feel free to contact me if you have any questions : yuming.du@enpc.fr
