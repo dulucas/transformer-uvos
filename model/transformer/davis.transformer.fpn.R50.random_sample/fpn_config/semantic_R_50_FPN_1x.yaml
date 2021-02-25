@@ -1,0 +1,13 @@
+_BASE_: "./Base-RCNN-FPN.yaml"
+MODEL:
+  META_ARCHITECTURE: "SemanticSegmentor"
+  WEIGHTS: "/home/duy/.cache/torch/hub/checkpoints/res50_fpn_3x.pth"
+  RESNETS:
+    DEPTH: 50
+    NORM: "ApexBN"
+  SEM_SEG_HEAD:
+    NUM_CLASSES: 1
+    NORM: "GN"
+    CONVS_DIM: 128
+  BACKBONE:
+    FREEZE_AT: 0

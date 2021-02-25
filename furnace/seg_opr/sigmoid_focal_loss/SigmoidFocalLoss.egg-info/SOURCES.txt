@@ -1,0 +1,7 @@
+setup.py
+SigmoidFocalLoss.egg-info/PKG-INFO
+SigmoidFocalLoss.egg-info/SOURCES.txt
+SigmoidFocalLoss.egg-info/dependency_links.txt
+SigmoidFocalLoss.egg-info/top_level.txt
+src/sigmoid_focal_loss.cpp
+src/sigmoid_focal_loss_cuda.cu
