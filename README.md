@@ -14,6 +14,7 @@ Anchor-Diffusion(Res101-Deeplabv3, 854x480) | 0.782 | --- | --- | 0.771 | --- | 
 ResNet50-FPN + Transformer + Simple Decoder
 
 ## Training
+You need to first download the [DAVIS dataset](https://davischallenge.org/index.html)
 The code requires 4 GPUs by default.
 ```
 cd model/transformer/davis.transformer.fpn.R50.random_sample/
