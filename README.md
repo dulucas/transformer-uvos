@@ -7,7 +7,8 @@ On **DAVIS 2016(val)**:
 
 Method | J_mean | J_recall | J_decay | F_mean | F_recall | F_decay
 -- | -- | -- | -- | -- | -- | -- 
-Ours(Res50) | 0.777 | 0.915 | 0.066 | 0.766 | 0.859 | 0.043
+Ours(Res50-FPN, 640x352) | 0.777 | 0.915 | 0.066 | 0.766 | 0.859 | 0.043
+Anchor-Diffusion(Res101-Deeplabv3, 854x480) | 0.782 | --- | --- | 0.771 | --- | ---
 
 ## Architecture
 ResNet50-FPN + Transformer + Simple Decoder
