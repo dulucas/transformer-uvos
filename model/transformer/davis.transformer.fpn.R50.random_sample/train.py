@@ -140,7 +140,7 @@ with Engine(custom_parser=parser) as engine:
             loss = criterion(preds, cur_masks)
             #loss = lovasz_hinge(preds.squeeze(), cur_masks.squeeze())
             loss = bootstrapped_ce_loss(loss)
-            #loss += 1. * dice_loss(preds[:, 0].flatten(1), cur_masks.flatten(1))
+            loss += 1. * dice_loss(preds[:, 0].flatten(1), cur_masks.flatten(1))
 
             # reduce the whole loss over multi-gpu
             if engine.distributed:
