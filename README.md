@@ -16,6 +16,7 @@ ResNet50-FPN + Transformer + Simple Decoder
 ## Training
 You need to first download the [DAVIS dataset](https://davischallenge.org/index.html)
 
+The network is initialized using [ResNet50-FPN](https://github.com/facebookresearch/detectron2/blob/master/configs/COCO-PanopticSegmentation/panoptic_fpn_R_50_3x.yaml) pre-trained on COCO dataset, which can be downloaded from [here](https://dl.fbaipublicfiles.com/detectron2/COCO-PanopticSegmentation/panoptic_fpn_R_50_3x/139514569/model_final_c10459.pkl).
 ```
 cd model/transformer/davis.transformer.fpn.R50.random_sample/
 sh run.sh
