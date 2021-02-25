@@ -20,8 +20,9 @@ sh run.sh
 ```
 
 ## Acknowledgement 
-Idea inspired by [Anchor-Diffusion](https://arxiv.org/abs/1910.10895)
-Codes based on [TorchSeg](https://github.com/ycszen/TorchSeg) and [Detr](https://github.com/facebookresearch/detr)
+Idea inspired by [Anchor-Diffusion](https://arxiv.org/abs/1910.10895).
+
+Codes based on [TorchSeg](https://github.com/ycszen/TorchSeg), [Detectron2](https://github.com/facebookresearch/detectron2) and [Detr](https://github.com/facebookresearch/detr)
 
 ## Contact
 Feel free to contact me if you have any questions : yuming.du@enpc.fr
