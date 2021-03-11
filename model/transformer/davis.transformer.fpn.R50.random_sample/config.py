@@ -18,7 +18,7 @@ cfg = C
 C.seed = 304
 
 """please config ROOT_dir and user when u first using"""
-C.repo_name = 'TorchSeg'
+C.repo_name = 'transformer-uvos'
 C.abs_dir = osp.realpath(".")
 C.this_dir = C.abs_dir.split(osp.sep)[-1]
 C.root_dir = C.abs_dir[:C.abs_dir.index(C.repo_name) + len(C.repo_name)]
